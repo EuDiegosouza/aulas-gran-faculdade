@@ -1,0 +1,10 @@
+const number = 10;
+console.log(number);
+
+
+function Diegameunome() {
+    console.log("Diegameunome")
+
+}
+
+diegameunome()

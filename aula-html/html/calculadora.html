@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>javascript</title>
+    <meta charset="utf-8" />
+    <script>
+        function somar() {
+            const n1 = Number(document.getElementById("n1").value)
+            const n2 = Number(document.getElementById("n2").value)
+            document.getElementById("resultado")
+                .innerHTML = "Resultado da soma: " + (n1 + n2)
+        }
+
+        function subtrair() {
+            const n1 = Number(document.getElementById("n1").value)
+            const n2 = Number(document.getElementById("n2").value)
+            document.getElementById("resultado")
+                .innerHTML = "Resultado da subtração: " + (n1 - n2)
+        }
+
+        function multiplicar() {
+            const n1 = Number(document.getElementById("n1").value)
+            const n2 = Number(document.getElementById("n2").value)
+            document.getElementById("resultado")
+            .innerHTML = "Resultado da multiplicação: " + (n1 * n2)
+        }
+
+        function dividir() {
+            const n1 = Number(document.getElementById("n1").value)
+            const n2 = Number(document.getElementById("n2").value)
+            if (n2 === 0) {
+                document.getElementById("resultado").innerHTML = "Não é possível dividir por zero!"
+            } else {
+                document.getElementById("resultado").innerHTML = "Resultado da divisão: " + (n1 / n2)
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form action="">
+        N1: <input type="text" id="n1" /><br>
+        N2: <input type="text" id="n2" /><br>
+
+        <input type="button" value="Somar" onclick="somar()">
+        <input type="button" value="Subtrair" onclick="subtrair()">
+        <input type="button" value="Multiplicar" onclick="multiplicar()">
+        <input type="button" value="Dividir" onclick="dividir()">
+
+        <h1 id="resultado">O resultado é...</h1><br>
+    </form>
+</body>
+
+</html>
